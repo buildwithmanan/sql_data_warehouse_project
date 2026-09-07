@@ -1,42 +1,73 @@
-# sql_data_warehouse_project
-End-to-end SQL Data Warehouse project covering ETL, data cleaning, transformation, dimensional modeling, and analytics-ready data.
-# SQL Data Warehouse Project
+# SQL Data Warehouse & ETL Project
 
-An end-to-end Data Engineering project focused on building a SQL Data Warehouse using ETL, data cleaning, transformation, and dimensional modeling.
+## 👋 About Me
 
-## 🛠️ Technologies
+I'm **Abdul Manan**, a Computer Science student and aspiring **Data Engineer**.
 
+I'm passionate about **SQL, ETL, Data Warehousing, and building reliable data pipelines**. I enjoy transforming raw data into clean, structured, and business-ready datasets.
+
+Currently, I'm building real-world Data Engineering projects and strengthening my skills in **MySQL, Python, ETL pipelines, Data Warehousing, and Cloud technologies**.
+
+---
+
+## 🏗️ Project Architecture
+
+```text
+CSV Files
+   ↓
+Bronze Layer → Raw Data
+   ↓
+Silver Layer → Cleaned & Transformed Data
+   ↓
+Gold Layer → Business-Ready Data
+```
+
+## 🔧 Technologies
+
+* MySQL 8
 * SQL
-* PostgreSQL / MySQL
+* ETL / ELT
+* Data Cleaning & Transformation
+* Window Functions
+* Stored Procedures
+* Star Schema
 * Git & GitHub
-* CSV
 
-## 🏗️ Architecture
+## 🚀 Key Work
 
-**Source → Bronze → Silver → Gold → Analytics**
+* Loaded CRM & ERP CSV data into the **Bronze layer**
+* Performed data profiling and quality checks
+* Cleaned duplicates, NULLs and invalid values
+* Used `ROW_NUMBER()` and `LEAD()` for transformations
+* Standardized dates, prices and sales values
+* Built cleaned **Silver-layer tables**
+* Created **Gold-layer dimension and fact views**
+* Implemented a **Star Schema**
+* Automated Silver ETL using a **Stored Procedure**
+* Performed data quality validation
 
-* **Bronze:** Raw data
-* **Silver:** Cleaned & transformed data
-* **Gold:** Business-ready data
+## ⭐ Data Warehouse Model
 
-## 🎯 Key Concepts
+```text
+             dim_customers
+                   │
+                   │ customer_sk
+                   ↓
+               fact_sales
+                   │
+                   │ product_key
+                   ↓
+             dim_products
+```
 
-* ETL & Data Warehousing
-* Data Cleaning & NULL Handling
-* Joins, CTEs & Window Functions
-* Fact & Dimension Tables
-* Data Quality Checks
-* Analytical SQL
+## 📊 Results
 
-## 🚀 Future Improvements
+* **18,484** cleaned customers
+* **397** products
+* **60,398** sales records
+* Customer & product surrogate keys
+* Data quality validations completed
 
-* Python ETL
-* Apache Airflow
-* Docker
-* Cloud Data Warehouse
-* Power BI Dashboard
+## 🎯 Purpose
 
-## 👨‍💻 Author
-
-**Abdul Manan Yousaf**
-Aspiring Data Engineer
+This project demonstrates practical **Data Engineering fundamentals**, including data ingestion, ETL, data cleaning, transformation, dimensional modeling and data warehouse architecture.
